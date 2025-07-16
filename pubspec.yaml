@@ -1,0 +1,38 @@
+name: noise_tracker
+description: "A Flutter noise tracking app for iOS"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Location and microphone permissions
+  permission_handler: ^11.0.1
+  
+  # Noise measurement - REAL microphone input
+  noise_meter: ^5.0.2
+  
+  # Google Maps for iOS
+  google_maps_flutter: ^2.5.0
+  
+  # iOS-specific location services
+  geolocator: ^10.1.0
+  
+  # HTTP requests for flight tracking
+  http: ^1.1.0
+  
+  # For better iOS integration
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
